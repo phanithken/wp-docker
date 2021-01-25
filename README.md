@@ -1,6 +1,9 @@
 # wp-docker
 
-containerize wordpress application
+containerize wordpress application  
+rely on:
+* https://hub.docker.com/_/wordpress/
+* https://hub.docker.com/_/mysql/
 
 ## .env
 
