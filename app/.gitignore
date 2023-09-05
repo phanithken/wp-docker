@@ -23,6 +23,9 @@ wp-config.php
 # Example themes
 /wp-content/themes/twenty*/
 
+# theme index
+/wp-content/themes/index.php
+
 # Example plugin
 /wp-content/plugins/hello.php
 
