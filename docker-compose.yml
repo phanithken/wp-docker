@@ -3,7 +3,7 @@ version: "3.8"
 services:
   wp:
     image: wordpress:latest
-    container_name: coffee-wp
+    container_name: docker-wp-web
     restart: unless-stopped
     environment:
       WORDPRESS_DB_HOST: ${WP_DB_HOST}
@@ -22,12 +22,13 @@ services:
 
   db:
     image: mysql:latest
-    container_name: coffee-db
+    container_name: docker-wp-db
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${WP_DB_NAME}
       MYSQL_USERNAME: ${WP_DB_USERNAME}
       MYSQL_PASSWORD: ${WP_DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${WP_DB_PASSWORD}
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
 
